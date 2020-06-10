@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="title">
+        <h1 id="head_1">Sevat Technologies</h1>
+        <div class="container">
+            <h1 id="head_2">WHAT DO YOU WANT TO DO TODAY?</h1>
+            <form action="#" id="form" onsubmit="add()">
+                <label for="inpu" id="lab" >Enter the todo</label><br>
+                <input id="inpu" type="text" name="todojobs" maxlength="40">
+                <button type="submit" id="add" >ADD</button><br>
+            </form>
+            <button class="but" onclick="deletecomp()">Delete Completed</button>
+            <button class="but" onclick="deleteall()">Delete All</button>
+            <ul id="com" ><h2>Incomplete</h2>
+                <li id="list-incomp"></li>
+            </ul> 
+             <ul id="com1"><h2>Completed</h2>
+                <li id="list-comp"></li>
+            </ul>
+        </div>
+    </div>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
